@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">lifesum</string>
+    <string name="title_section1">Search for food</string>
+    <string name="title_section2">My Food</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="hint_search">I\'m looking for</string>
+    <string name="searching">Searching...</string>
+    <string name="no_result">No results</string>
+    <string name="saving">Saving...</string>
+    <string name="nutritional_information">Nutritional information</string>
+    <string name="carbohydrates">Carbohydrates:</string>
+    <string name="calories">Calories:</string>
+    <string name="cholesterol">Cholesterol:</string>
+    <string name="fiber">Fiber:</string>
+    <string name="fat">Fat:</string>
+    <string name="potassium">Potassium:</string>
+    <string name="protein">Protein:</string>
+    <string name="sodium">Sodium:</string>
+    <string name="sugar">Sugar:</string>
+    <string name="save">Save</string>
+</resources>
