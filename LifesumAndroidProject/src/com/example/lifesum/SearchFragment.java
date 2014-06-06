@@ -38,27 +38,18 @@ public class SearchFragment extends ListFragment {
 	 * FoodListAdapter instance, which receives response from web
 	 */
 	private FoodListAdapter mFoodListAdapter;
+	
 	/**
 	 * The fragment's current callback object, which is notified of list item
 	 * clicks.
 	 */
-
-	private Callbacks mCallbacks = sDummyCallbacks;
-
+	private FoodListCallbacks mCallbacks = sDummyCallbacks;
+	
 	/**
-	 * A callback interface that all activities containing this fragment must
-	 * implement. This mechanism allows activities to be notified of item
-	 * selections.
-	 */
-	public interface Callbacks {
-		void onFoodSelected(Food food);
-	}
-
-	/**
-	 * A dummy implementation of the {@link Callbacks} interface that does
+	 * A dummy implementation of the {@link FoodListCallbacks} interface that does
 	 * nothing. Used only when this fragment is not attached to an activity.
 	 */
-	private static Callbacks sDummyCallbacks = new Callbacks() {
+	private static FoodListCallbacks sDummyCallbacks = new FoodListCallbacks() {
 		@Override
 		public void onFoodSelected(Food food) {
 		}
@@ -91,13 +82,13 @@ public class SearchFragment extends ListFragment {
 		super.onAttach(activity);
 
 		// Activities containing this fragment must implement its callbacks.
-		if (!(activity instanceof Callbacks)) {
+		if (!(activity instanceof FoodListCallbacks)) {
 			throw new IllegalStateException(
 					"Activity must implement fragment's callbacks.");
 		}
 		((MainActivity) activity).onSectionAttached(1);
 
-		mCallbacks = (Callbacks) activity;
+		mCallbacks = (FoodListCallbacks) activity;
 	}
 
 	@Override

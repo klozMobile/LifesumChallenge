@@ -10,11 +10,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.androidquery.util.AQUtility;
-import com.example.lifesum.SearchFragment.Callbacks;
 import com.example.lifesum.model.Food;
 
 public class MainActivity extends ActionBarActivity implements
-		NavigationDrawerFragment.NavigationDrawerCallbacks, Callbacks {
+		NavigationDrawerFragment.NavigationDrawerCallbacks, FoodListCallbacks {
 
 	SearchFragment mSearchFragment;
 	/**
